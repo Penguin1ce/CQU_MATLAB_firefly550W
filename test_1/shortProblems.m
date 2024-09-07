@@ -61,7 +61,6 @@ O = zeros(2,3);
 s = randi([-10 10],1,2);
 S = diag(s);
 A = [E R;O S];
-
 %定义一个验证矩阵Acheck
 Adoub = A^2;
 Acheck = [E R+R*S;O S^2];
