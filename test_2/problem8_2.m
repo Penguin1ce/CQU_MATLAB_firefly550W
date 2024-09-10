@@ -16,3 +16,4 @@ for A = 0:1
         end
     end
 end
+disp(result)

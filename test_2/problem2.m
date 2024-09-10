@@ -16,4 +16,4 @@ yt = @(t) sin(t/2);
 fplot(xt,yt,[0 4.*pi]);
 title('x = sin(t), y = sin(t)/2');
 % 调整图形布局
-tightfig;
+axis equal
