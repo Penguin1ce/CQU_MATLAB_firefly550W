@@ -9,6 +9,7 @@ subplot(1,3,2)
 f = @(x,y) x.*sin(x)+y.*sin(y);
 fimplicit(f,[-30 30 -30 30]);
 title('x*sin(x) + y*sin(y) = 0');
+axis equal
 
 subplot(1,3,3)
 xt = @(t) sin(t);
