@@ -30,8 +30,7 @@ if check == 1
     % 作图
     figure;
     
-    % 地貌图
-    surf(X, Y, Z);    % 使用surf绘制三维地貌图
+    surf(X, Y, Z);    % 使用surf绘制
     %mesh(X,Y,Z);
     title(A(nums-1),'元素空间分布图');
     xlabel('X 坐标(m)');
@@ -64,8 +63,7 @@ elseif check == 2
     % 作图
     figure;
     
-    % 地貌图
-    surf(X, Y, Z);    % 使用surf绘制三维地貌图
+    surf(X, Y, Z);    % 使用surf绘制
     %mesh(X,Y,Z);
     title(A(nums-1),'元素污染情况分布图');
     xlabel('X 坐标(m)');

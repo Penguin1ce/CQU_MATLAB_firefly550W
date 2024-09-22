@@ -10,8 +10,6 @@ z = A(:, 4); % 提取高度（Z）
 % 创建规则的网格以进行插值
 nx = 1000;
 ny = 10000;
-% px = linspace(0, 30000, nx);
-% py = linspace(0, 30000, ny);
 px = linspace(0, 30000);
 py = linspace(0, 30000);
 [X, Y] = meshgrid(px, py);
@@ -27,12 +25,13 @@ figure;
 % 地貌图
 %subplot(1, 2, 1); % 子图1
 scatter(x,y,5,z);
-surf(X, Y, Z);    % 使用surf绘制三维地貌图
-%mesh(X,Y,Z);
+%surf(X, Y, Z);    % 使用surf绘制三维地貌图
+mesh(X,Y,Z);
 title('地貌图');
 xlabel('X 坐标');
 ylabel('Y 坐标');
 zlabel('高度');
+axis auto
 shading interp;   % 平滑色彩
 colorbar;
 
