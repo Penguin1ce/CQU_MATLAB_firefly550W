@@ -18,9 +18,10 @@ function [M] = Julia(zMax,c,N)
     end
     M_transformed = atan(0.1 * M);
     imagesc(M_transformed);
-    colormap('summer');  % 设置颜色映射
+    colormap('hot');  % 设置颜色映射
     colorbar;  % 显示颜色条
     axis xy;  % 防止 y 轴翻转
+    axis equal
     title(sprintf('zMax = %.2f, c = %.2f + %.2fi, N = %d', zMax, real(c), imag(c), N));
 end
 
